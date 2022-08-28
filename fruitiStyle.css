@@ -2,4 +2,34 @@ body{
     margin: 0;
     padding: 0;
     background-color: red;
+    font-size: 1.3rem;
+}
+header{
+    background-color: chartreuse;
+    padding-left: 20%;
+    padding-right: 20%;
+    display: flex;
+}
+.navBar{
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+}
+.navText{
+    background-color: grey;
+    opacity: .9;
+    width: 10%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    border-radius: 10%;
+    margin-top: -1%;
+}
+.currentPage{
+    background-color: white;
+}
+footer{
+    height: 300vh
 }
