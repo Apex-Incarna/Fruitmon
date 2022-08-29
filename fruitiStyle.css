@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Seymour+One&family=Shadows+Into+Light&display=swap');
 
 body {
-    margin: 0;
+    margin: 0 0 -1% 0;
     padding: 0;
     font-size: 1.3rem;
+    background-image: url(indexImg/fruitIconCollageGrey.jpg);
+    background-repeat: round;
 }
 
 header {
@@ -18,7 +20,7 @@ header {
     background-size: cover;
 }
 
-.intro{
+.intro {
     display: flex;
     align-items: flex-start;
     width: 100%;
@@ -27,68 +29,134 @@ header {
 }
 
 .introImg {
-    margin: auto 0 auto 15%
+    margin: auto 0 auto 7%
 }
 
 .introImg img {
-    height: 80vh;
+    height: 45vw;
 }
 
 .introImg iframe {
-    width: 40vw;
-    height: 80vh;
+    width: calc(560vw/10);
+    height: calc(315vw/10);
 }
 
 .introText {
-    font-size: 1.2em;
-    width: 30%;
+    font-size: 2.7vw;
     margin: auto auto auto 1%;
+    width: 40%;
 }
 
 .navBar {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     position: fixed;
     top: 0;
     width: 100%;
     text-align: center;
     z-index: 1;
-}
-
-.navText {
-    background-color: grey;
+    background-color: lightblue;
     opacity: .9;
-    width: 10%;
-    padding-top: 2%;
-    padding-bottom: 1%;
-    border-radius: 10%;
-    margin-top: -1%;
-    font-family: fantasy;
+    font-size: 1em;
+    font-family: cursive;
 }
 
 a {
     text-decoration: none;
-    color: chartreuse;
+    color: black;
 }
 
 .currentPage {
-    background-color: rgb(212, 212, 212);
+    /* background-color: grey;
+    min-width: fit-content;
+    width: 15%; */
+    padding-top: 2%;
+    padding-bottom: 1%;
+    margin-top: -1%;
+    font-weight: 700;
 }
 
 main {
     height: 300vh;
+    margin: 0 10%;
+    background-color: white;
+    padding: 1%;
 }
 
+h2 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2em;
+}
+
+p {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1em;
+}
 .flex {
     display: flex;
-    justify-content: space-between;
-    margin: 1% 10%;
+    justify-content:space-between;
+    margin: 1% 15%;
 }
 
 .line {
-    width: 85%;
+    width: 80%;
     background-color: black;
     height: 1px;
     text-align: center;
     margin: 0 auto;
 }
+
+footer{
+    background-color: white;
+    padding: 0 0 2% 0;
+    margin: 0 10%;
+}
+
+/* Media queries for responsive web design */
+/* These ask the browser to identify the properties of the media that the content is being 
+displayed on and change the CSS rules accordingly */
+
+/* As long as the width of the viewport is less than 750px, implement the rules inside the media query */
+@media (max-width: 750px) {
+    header {
+        height: 40vh;
+    }
+
+    .intro {
+        height: 40vh;
+    }
+
+    .introImg {
+        margin: auto 0 auto 3%;
+    }
+
+    #video {
+        margin: auto 0 auto 6%;
+    }
+
+    .introText {
+        font-size: 2.9vw;
+        width: 45%;
+        margin: auto auto auto 1%;
+    }
+
+    main {
+        margin: 0 5%;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+    
+}
+
+/* As long as the width of the viewport is greater than 1200px, implement the rules inside the media query */
+@media (min-width: 1200px) {
+    body {
+        font-size: 1.7rem;
+    }
+}
+
+/* As long as the screen is in portrait mode, implement the rules inside the media query */
+@media screen and (orientation: portrait) {}
