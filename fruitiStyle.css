@@ -1,24 +1,61 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
+
+body {
     margin: 0;
     padding: 0;
-    background-color: red;
     font-size: 1.3rem;
 }
-header{
-    background-color: chartreuse;
-    padding-left: 20%;
-    padding-right: 20%;
-    display: flex;
+
+header {
+    /* padding-left: 20%;
+    padding-right: 20%; */
+    padding-top: 1%;
+    height: 100vh;
+    margin: 0 auto;
+    font-family: 'Seymour One', sans-serif;
+    color: chartreuse;
+    background-image: url(indexImg/backgroundFruits.jpg);
+    background-size: cover;
 }
-.navBar{
+
+.intro{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    margin: auto;
+    height: 100vh;
+}
+
+.introImg {
+    margin: auto 0 auto 15%
+}
+
+.introImg img {
+    height: 80vh;
+}
+
+.introImg iframe {
+    width: 40vw;
+    height: 80vh;
+}
+
+.introText {
+    font-size: 1.2em;
+    width: 30%;
+    margin: auto auto auto 1%;
+}
+
+.navBar {
     display: flex;
     justify-content: space-evenly;
     position: fixed;
     top: 0;
     width: 100%;
     text-align: center;
+    z-index: 1;
 }
-.navText{
+
+.navText {
     background-color: grey;
     opacity: .9;
     width: 10%;
@@ -26,10 +63,32 @@ header{
     padding-bottom: 1%;
     border-radius: 10%;
     margin-top: -1%;
+    font-family: fantasy;
 }
-.currentPage{
-    background-color: white;
+
+a {
+    text-decoration: none;
+    color: chartreuse;
 }
-footer{
-    height: 300vh
+
+.currentPage {
+    background-color: rgb(212, 212, 212);
+}
+
+main {
+    height: 300vh;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    margin: 1% 10%;
+}
+
+.line {
+    width: 85%;
+    background-color: black;
+    height: 1px;
+    text-align: center;
+    margin: 0 auto;
 }
