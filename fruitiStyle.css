@@ -33,7 +33,7 @@ header {
 }
 
 .introImg img {
-    height: 45vw;
+    width: 45vw;
 }
 
 .introImg iframe {
@@ -64,7 +64,11 @@ header {
 
 a {
     text-decoration: none;
-    color: black;
+    color: inherit;
+}
+
+a:hover {
+    opacity: .5;
 }
 
 .currentPage {
@@ -96,7 +100,8 @@ p {
 .flex {
     display: flex;
     justify-content:space-between;
-    margin: 1% 15%;
+    align-items: center;
+    margin: auto 5%;
 }
 
 .line {
@@ -108,9 +113,10 @@ p {
 }
 
 footer{
-    background-color: white;
-    padding: 0 0 2% 0;
-    margin: 0 10%;
+    background-color: black;
+    color: white;
+    padding: 1% 0;
+    font-size: .75em;
 }
 
 /* Media queries for responsive web design */
@@ -129,6 +135,7 @@ displayed on and change the CSS rules accordingly */
 
     .introImg {
         margin: auto 0 auto 3%;
+        height: 40vw;
     }
 
     #video {
@@ -149,6 +156,9 @@ displayed on and change the CSS rules accordingly */
         font-size: 1.5em;
     }
     
+    footer {
+        font-size: .5em;
+    }
 }
 
 /* As long as the width of the viewport is greater than 1200px, implement the rules inside the media query */
@@ -159,4 +169,6 @@ displayed on and change the CSS rules accordingly */
 }
 
 /* As long as the screen is in portrait mode, implement the rules inside the media query */
-@media screen and (orientation: portrait) {}
+@media screen and (orientation: portrait) {
+
+}
