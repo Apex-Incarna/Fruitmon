@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Seymour+One&family=Shadows+Into+Light&display=swap');
 
+* {
+    transition-property: all;
+    transition-duration: .5s;
+}
+
 body {
     margin: 0 0 -1% 0;
     padding: 0;
-    font-size: 1.3rem;
+    font-size: 1rem;
     background-image: url(indexImg/fruitIconCollageGrey.jpg);
     background-repeat: round;
 }
@@ -11,9 +16,7 @@ body {
 header {
     /* padding-left: 20%;
     padding-right: 20%; */
-    padding-top: 1%;
     height: 100vh;
-    margin: 0 auto;
     font-family: 'Seymour One', sans-serif;
     color: chartreuse;
     background-image: url(indexImg/backgroundFruits.jpg);
@@ -25,24 +28,24 @@ header {
     align-items: flex-start;
     width: 100%;
     margin: auto;
-    height: 100vh;
+    height: 90vh;
 }
 
 .introImg {
-    margin: auto 0 auto 7%
+    margin: auto 0 auto 22%
 }
 
 .introImg img {
-    width: 45vw;
+    width: 20vw;
 }
 
 .introImg iframe {
-    width: calc(560vw/10);
-    height: calc(315vw/10);
+    width: 56vw;
+    height: 31.5vw;
 }
 
 .introText {
-    font-size: 2.7vw;
+    font-size: 2vw;
     margin: auto auto auto 1%;
     width: 40%;
 }
@@ -54,12 +57,17 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    height: 10vh;
     text-align: center;
     z-index: 1;
     background-color: lightblue;
     opacity: .9;
     font-size: 1em;
     font-family: cursive;
+}
+
+.navBarSpace {
+    height: 10vh;
 }
 
 a {
@@ -124,18 +132,18 @@ footer{
 displayed on and change the CSS rules accordingly */
 
 /* As long as the width of the viewport is less than 750px, implement the rules inside the media query */
-@media (max-width: 750px) {
+@media screen and (max-width: 750px) {
     header {
         height: 40vh;
     }
 
     .intro {
-        height: 40vh;
+        height: 30vh;
     }
 
     .introImg {
         margin: auto 0 auto 3%;
-        height: 40vw;
+        height: 20vw;
     }
 
     #video {
@@ -143,7 +151,7 @@ displayed on and change the CSS rules accordingly */
     }
 
     .introText {
-        font-size: 2.9vw;
+        font-size: 1em;
         width: 45%;
         margin: auto auto auto 1%;
     }
@@ -164,7 +172,7 @@ displayed on and change the CSS rules accordingly */
 /* As long as the width of the viewport is greater than 1200px, implement the rules inside the media query */
 @media (min-width: 1200px) {
     body {
-        font-size: 1.7rem;
+        font-size: 1rem;
     }
 }
 
