@@ -19,7 +19,6 @@ header {
     color: chartreuse;
     background-image: url(indexImg/backgroundFruits.jpg);
     background-size: cover;
-    display: none;
 }
 
 .intro {
@@ -99,15 +98,19 @@ main {
     padding: 1%;
 }
 
+table td {
+    border: #FFEB3B solid;
+}
+
 .boxes {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .topBoxes,
-.bottomBoxes, .rightBoxes {
+.bottomBoxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -121,6 +124,7 @@ main {
 .smallBox {
     width: 20vw;
     height: 20vw;
+    padding: 2%;
 }
 
 .bigBox,
@@ -136,20 +140,7 @@ main {
     padding: 1%;
     margin: -1%;
     text-align: center;
-}
-
-#box1 {
-    height: 40vw;
-    width: 40vw;
-}
-
-#box2,
-#box3,
-#box4,
-#box5,
-#box6 {
-    width: 20vw;
-    height: 20vw;
+    border: #FFEB3B solid;
 }
 
 #box1,
@@ -161,6 +152,8 @@ main {
     background-size: cover;
     background-clip: content-box;
     transition: all 0.5s;
+    width: 20vw;
+    height: 20vw;
 }
 
 #box1:hover,
@@ -178,23 +171,23 @@ main {
 }
 
 #box2 {
-    background-image: url(indexImg/ninjaKiwi.jpg);
+    background-image: url(indexImg/oilMountainOrchardTwo.jfif);
 }
 
 #box3 {
-    background-image: url();
+    background-image: url(indexImg/ninjaKiwiTwo.jpg);
 }
 
 #box4 {
-    background-image: url();
+    background-image: url(fruitBasketImg/raspberryBikerGang.jpg);
 }
 
 #box5 {
-    background-image: url();
+    background-image: url(fruitBasketImg/fruitBasket.jpg);
 }
 
 #box6 {
-    background-image: url();
+    background-image: url(indexImg/fruitConstruction.jpg);
 }
 
 h2 {
