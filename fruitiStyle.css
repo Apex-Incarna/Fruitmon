@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Seymour+One&family=Shadows+Into+Light&display=swap');
 
 * {
-    transition-property: all;
-    transition-duration: .5s;
+    font-size: 1rem;
 }
 
 body {
     margin: 0 0 -1% 0;
     padding: 0;
-    font-size: 1rem;
     background-image: url(indexImg/fruitIconCollageGrey.jpg);
     background-repeat: round;
 }
@@ -21,6 +19,7 @@ header {
     color: chartreuse;
     background-image: url(indexImg/backgroundFruits.jpg);
     background-size: cover;
+    display: none;
 }
 
 .intro {
@@ -50,6 +49,10 @@ header {
     width: 40%;
 }
 
+.space {
+    height: 10vh;
+}
+
 .navBar {
     display: flex;
     justify-content: space-evenly;
@@ -75,7 +78,7 @@ a {
     color: inherit;
 }
 
-a:hover {
+.navbar a:hover {
     opacity: .5;
 }
 
@@ -96,6 +99,104 @@ main {
     padding: 1%;
 }
 
+.boxes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.topBoxes,
+.bottomBoxes, .rightBoxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bigBox {
+    height: 40vw;
+    width: 40vw;
+}
+
+.smallBox {
+    width: 20vw;
+    height: 20vw;
+}
+
+.bigBox,
+.smallBox {
+    position: relative;
+}
+
+.boxText {
+    background-color: #FFEB3B;
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    padding: 1%;
+    margin: -1%;
+    text-align: center;
+}
+
+#box1 {
+    height: 40vw;
+    width: 40vw;
+}
+
+#box2,
+#box3,
+#box4,
+#box5,
+#box6 {
+    width: 20vw;
+    height: 20vw;
+}
+
+#box1,
+#box2,
+#box3,
+#box4,
+#box5,
+#box6 {
+    background-size: cover;
+    background-clip: content-box;
+    transition: all 0.5s;
+}
+
+#box1:hover,
+#box2:hover,
+#box3:hover,
+#box4:hover,
+#box5:hover,
+#box6:hover {
+    padding: 1%;
+    margin: -1%;
+}
+
+#box1 {
+    background-image: url(indexImg/colorfulOrchard.jfif);
+}
+
+#box2 {
+    background-image: url(indexImg/ninjaKiwi.jpg);
+}
+
+#box3 {
+    background-image: url();
+}
+
+#box4 {
+    background-image: url();
+}
+
+#box5 {
+    background-image: url();
+}
+
+#box6 {
+    background-image: url();
+}
+
 h2 {
     font-family: 'Permanent Marker', cursive;
     font-size: 2em;
@@ -105,9 +206,10 @@ p {
     font-family: 'Shadows Into Light', cursive;
     font-size: 1em;
 }
+
 .flex {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     margin: auto 5%;
 }
@@ -120,7 +222,7 @@ p {
     margin: 0 auto;
 }
 
-footer{
+footer {
     background-color: black;
     color: white;
     padding: 1% 0;
@@ -163,7 +265,7 @@ displayed on and change the CSS rules accordingly */
     h2 {
         font-size: 1.5em;
     }
-    
+
     footer {
         font-size: .5em;
     }
@@ -177,6 +279,4 @@ displayed on and change the CSS rules accordingly */
 }
 
 /* As long as the screen is in portrait mode, implement the rules inside the media query */
-@media screen and (orientation: portrait) {
-
-}
+@media screen and (orientation: portrait) {}
