@@ -77,7 +77,7 @@ a {
     color: inherit;
 }
 
-.navbar a:hover {
+a:hover {
     opacity: .5;
 }
 
@@ -107,6 +107,10 @@ table td {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+#topNewsBoxes {
+    flex-wrap: nowrap;
 }
 
 .topBoxes,
