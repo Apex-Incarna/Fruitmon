@@ -107,6 +107,9 @@ footer {
     font-size: .75em;
 }
 
+.dontshow {
+    display: none;
+}
 
 
 
@@ -221,7 +224,50 @@ section.fruitBasket {
     text-align: center;
 }
 
+section.fruitBasket section{
+    border: 5px solid lightblue;
+    border-radius: 3%;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 5%;
+    padding-right: 5%;
+}
 
+.basketShowcase {
+    width: 30vw;
+    border: 3px solid coral;
+    border-radius: 3%;
+    margin-right: 3%;
+}
+
+.showcaseBoxes {
+    display: flex;
+    justify-content: space-around;
+}
+
+.basketShowcaseBox {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 1.3em;
+}
+
+.basketShowcaseInfoBox {
+    background-color: lightskyblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 3%;
+}
+
+.statName {
+    color: white;
+}
+
+.statValue {
+    font-family: 'Courier New', Courier, monospace;
+}
 
 
 
@@ -236,6 +282,7 @@ section.fruitBasket {
 
 .newsBox:hover {
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 .newsBox img {
