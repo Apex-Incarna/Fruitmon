@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Seymour+One&family=Shadows+Into+Light&display=swap');
 
+/* All of the website-wide css goes here */
 * {
     font-size: 1rem;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 body {
@@ -9,43 +12,6 @@ body {
     padding: 0;
     background-image: url(indexImg/fruitIconCollageGrey.jpg);
     background-repeat: round;
-}
-
-header {
-    /* padding-left: 20%;
-    padding-right: 20%; */
-    height: 100vh;
-    font-family: 'Seymour One', sans-serif;
-    color: chartreuse;
-    background-image: url(indexImg/backgroundFruits.jpg);
-    background-size: cover;
-}
-
-.intro {
-    display: flex;
-    align-items: flex-start;
-    width: 100%;
-    margin: auto;
-    height: 90vh;
-}
-
-.introImg {
-    margin: auto 0 auto 22%
-}
-
-.introImg img {
-    width: 20vw;
-}
-
-.introImg iframe {
-    width: 56vw;
-    height: 31.5vw;
-}
-
-.introText {
-    font-size: 2vw;
-    margin: auto auto auto 1%;
-    width: 40%;
 }
 
 .space {
@@ -82,9 +48,6 @@ a:hover {
 }
 
 .currentPage {
-    /* background-color: grey;
-    min-width: fit-content;
-    width: 15%; */
     padding-top: 2%;
     padding-bottom: 1%;
     margin-top: -1%;
@@ -92,25 +55,71 @@ a:hover {
 }
 
 main {
-    height: 300vh;
+    min-height: 300vh;
     margin: 0 10%;
     background-color: white;
     padding: 1%;
 }
 
-table td {
-    border: #FFEB3B solid;
+h1 {
+    font-family: 'Seymour One', sans-serif;
+    font-size: 2em;
 }
 
+h3 {
+    font-family: "permanent marker", serif;
+}
+
+h4 {
+    color: coral;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2em;
+}
+
+p {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1em;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 5%;
+}
+
+.line {
+    width: 80%;
+    background-color: black;
+    height: 1px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 1% 0;
+    font-size: .75em;
+}
+
+
+
+
+
+
+
+
+/* Main Page */
 .boxes {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-#topNewsBoxes {
-    flex-wrap: nowrap;
 }
 
 .topBoxes,
@@ -194,37 +203,65 @@ table td {
     background-image: url(indexImg/fruitConstruction.jpg);
 }
 
-h2 {
-    font-family: 'Permanent Marker', cursive;
-    font-size: 2em;
-}
 
-p {
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 1em;
-}
 
-.flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto 5%;
-}
 
-.line {
-    width: 80%;
-    background-color: black;
-    height: 1px;
+
+
+/* Play Page */
+
+
+
+
+
+
+
+/* Fruits Page */
+section.fruitBasket {
     text-align: center;
-    margin: 0 auto;
 }
 
-footer {
-    background-color: black;
-    color: white;
-    padding: 1% 0;
-    font-size: .75em;
+
+
+
+
+
+/* News Page */
+.newsBox {
+    width: 20%;
+    margin: 5%;
+    transition: background-color .1s;
+    transition: transform .5s;
 }
+
+.newsBox:hover {
+    transform: scale(1.05);
+}
+
+.newsBox img {
+    border: 10px solid lightblue;
+    border-radius: 10%;
+    margin: 1% auto 0 auto;
+    width: 97%;
+    padding: 0%;
+    display: block;
+}
+
+.newsText {
+    padding: .5%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* white-space: nowrap; */
+}
+
+#topNewsBoxes {
+    flex-wrap: nowrap;
+}
+
+#topNewsBox {
+    width: 100%;
+}
+
 
 /* Media queries for responsive web design */
 /* These ask the browser to identify the properties of the media that the content is being 
