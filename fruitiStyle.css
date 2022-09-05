@@ -7,6 +7,10 @@
     margin-block-end: 0;
 }
 
+html {
+    scroll-behavior: smooth
+}
+
 body {
     margin: 0 0 -1% 0;
     padding: 0;
@@ -31,7 +35,7 @@ body {
     background-color: lightblue;
     opacity: .9;
     font-size: 1em;
-    font-family: cursive;
+    font-family: "permanent marker", serif;
 }
 
 .navBarSpace {
@@ -43,7 +47,12 @@ a {
     color: inherit;
 }
 
-a:hover {
+p a {
+    text-decoration: underline;
+    color: black;
+}
+
+.navText a:hover, footer a:hover, p a:hover{
     opacity: .5;
 }
 
@@ -51,11 +60,11 @@ a:hover {
     padding-top: 2%;
     padding-bottom: 1%;
     margin-top: -1%;
-    font-weight: 700;
+    color: whitesmoke;
 }
 
 main {
-    min-height: 300vh;
+    min-height: 100vh;
     margin: 0 10%;
     background-color: white;
     padding: 1%;
@@ -92,6 +101,10 @@ p {
     margin: auto 5%;
 }
 
+hr {
+    margin: 5% 0;
+}
+
 .line {
     width: 80%;
     background-color: black;
@@ -118,92 +131,48 @@ footer {
 
 
 /* Main Page */
+section.intro {
+    margin: 0 10%;
+}
+
 .boxes {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-.topBoxes,
-.bottomBoxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.bigBox {
-    height: 40vw;
-    width: 40vw;
+    margin: 0;
+    padding: 0;
 }
 
 .smallBox {
-    width: 20vw;
-    height: 20vw;
-    padding: 2%;
-}
-
-.bigBox,
-.smallBox {
+    display: block;
+    width: 30%;
+    margin: 1%;
+    transition: background-color .1s;
+    transition: transform .5s;
     position: relative;
 }
 
+.smallBox img {
+    width: 100%;
+    border: 5px solid lightblue;
+    border-radius: 5%;
+}
+
+.smallBox:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
 .boxText {
-    background-color: #FFEB3B;
+    background-color: coral;
     position: absolute;
     bottom: 10%;
-    width: 100%;
-    padding: 1%;
-    margin: -1%;
+    width: 95%;
     text-align: center;
-    border: #FFEB3B solid;
-}
-
-#box1,
-#box2,
-#box3,
-#box4,
-#box5,
-#box6 {
-    background-size: cover;
-    background-clip: content-box;
-    transition: all 0.5s;
-    width: 20vw;
-    height: 20vw;
-}
-
-#box1:hover,
-#box2:hover,
-#box3:hover,
-#box4:hover,
-#box5:hover,
-#box6:hover {
-    padding: 1%;
-    margin: -1%;
-}
-
-#box1 {
-    background-image: url(indexImg/colorfulOrchard.jfif);
-}
-
-#box2 {
-    background-image: url(indexImg/oilMountainOrchardTwo.jfif);
-}
-
-#box3 {
-    background-image: url(indexImg/ninjaKiwiTwo.jpg);
-}
-
-#box4 {
-    background-image: url(fruitBasketImg/raspberryBikerGang.jpg);
-}
-
-#box5 {
-    background-image: url(fruitBasketImg/fruitBasket.jpg);
-}
-
-#box6 {
-    background-image: url(indexImg/fruitConstruction.jpg);
+    /* border-style: outset; */
+    border-radius: 0 20px 20px 0;
+    font-weight: 700;
 }
 
 
@@ -212,6 +181,31 @@ footer {
 
 
 /* Play Page */
+.playIntro {
+    background-color: lightskyblue;
+    padding: 10vh 2%;
+    border-radius: 10px;
+}
+
+.playIntroText {
+    width: 90%;
+    padding-right: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.playIntroText p {
+    font-size: 1.8em;
+}
+
+iframe {
+    min-width: 56vw;
+    min-height: 31.5vw;
+}
+
+
+
 
 
 
@@ -226,7 +220,7 @@ section.fruitBasket {
 
 section.fruitBasket section{
     border: 5px solid lightblue;
-    border-radius: 3%;
+    border-radius: 10px;
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 5%;
@@ -235,8 +229,9 @@ section.fruitBasket section{
 
 .basketShowcase {
     width: 30vw;
+    height: 30vw;
     border: 3px solid coral;
-    border-radius: 3%;
+    border-radius: 100px;
     margin-right: 3%;
 }
 
@@ -251,6 +246,10 @@ section.fruitBasket section{
     flex-direction: column;
     justify-content: space-around;
     font-size: 1.3em;
+}
+
+.basketShowcaseStat {
+    text-align: center;
 }
 
 .basketShowcaseInfoBox {
@@ -268,6 +267,38 @@ section.fruitBasket section{
 .statValue {
     font-family: 'Courier New', Courier, monospace;
 }
+
+#fruitBasketAbout {
+    background-color: lightskyblue;
+    padding: 10vh 2%;
+    border-radius: 10px;
+    margin-top: 5%;
+}
+
+#fruitBasketAbout img {
+    width: 100%;
+}
+
+.fBAboutText {
+    width: 90%;
+    padding-right: 1%;
+}
+
+.fBAboutText p {
+    font-size: 1.8em;
+}
+
+.fBAboutBoxes {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+
+
 
 
 

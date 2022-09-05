@@ -1,274 +1,319 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Fruitimon - The Fruit Basket</title>
-        <link rel="stylesheet" href="fruitiStyle.css">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" href="indexImg/fruitmonLogo.jpg">
-        <script src="fruitBasket.js" defer></script>
-    </head>
-    <body>
-        <section class="navBar">
-            <div class="navText"><a href="index.html">Home</a></div>
-            <div class="navText"><a href="play.html">Play</a></div>
-            <div class="navText currentPage"><a href="fruitBasket.html">Fruits</a></div>
-            <div class="navText"><a href="news.html">News</a></div>
-            <div class="navText"><a href="shop.html">Shop</a></div>
-        </section>
-        <div class="space"></div>
-        <main>
-            <section class="fruitBasket">
-                <h1>The Fruit Basket</h1>
-                <p>Select a fruit to begin!</p>
-                <div class="boxes">
-                    <div id="cAnetelopeImg" class="newsBox"><a href="fruitBasket.html#cAnetelope"><img src="fruitBasketImg/cAnetelope.jfif" alt="A cantaloupe with an antelope head"></a></div>
-                    <div id="bikerGangImg" class="newsBox"><img src="fruitBasketImg/raspberryBikerGang.jpg" alt="The entire raspberry biker gang piled onto one motorcycle"></div>
-                    <div id="spineappleImg" class="newsBox"><img src="fruitBasketImg/spineappleRealistic.jpg" alt="A pineapple with very large and dangerous spines"></div>
-                    <div id="falseStrImg" class="newsBox"><img src="fruitBasketImg/theBestFalseStrawberry.jfif" alt="A mock straberry wearing phony glasses and a mustache"></div>
-                    <div id="bananarangImg" class="newsBox"><img src="fruitBasketImg/bananarang.png" alt="A banana wearing a bandana throwing a boomerang"></div>
-                    <div id="figsImg" class="newsBox"><img src="fruitBasketImg/clusterBombFigs.png" alt="Flaming cluster bomb figs dropping from the sky"></div>
-                    <div id="waterFelonImg" class="newsBox"><img src="fruitBasketImg/waterFelon.png" alt="One nasty-looking criminal watermelon"></div>
-                    <div id="dragonFruitImg" class="newsBox"><img src="fruitBasketImg/dragonFruit.png" alt="An imposing orange dragon in a tropical orchard"></div>
-                    <div id="ninjaKiwiImg" class="newsBox"><img src="indexImg/ninjaKiwiTwo.jpg" alt="The one, the only, Ninja Kiwi"></div>
-                </div>
-                <section class="dontshow" id="cAnetelope">
-                    <div class="showcaseshowcaseBoxes">
-                        <img src="fruitBasketImg/cAnetelope.jfif" alt="A cantaloupe with an antelope head" class="basketShowcase">
-                        <div class="basketShowcaseBox">
-                            <p class="basketShowcaseText"></p>
-                            <div class="basketShowcaseInfoBox">
-                                <div class="basketShowcaseStat">
-                                    <p class="statName">Height</p>
-                                    <p class="statValue"></p>
-                                </div>
-                                <div class="basketShowcaseStat">
-                                    <p class="statName">Weight</p>
-                                    <p class="statValue"></p>
-                                </div>
-                                <div class="basketShowcaseStat">
-                                    <p class="statName">Type</p>
-                                    <p class="statValue"></p>
-                                </div>
-                                <div class="basketShowcaseStat">
-                                    <p class="statName">Health Points</p>
-                                    <p class="statValue"></p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="dontshow" id="bikerGang">
-                    <div class="showcaseBoxes">
-                        <img src="fruitBasketImg/raspberryBikerGang.jpg" alt="The entire raspberry biker gang piled onto one motorcycle" class="basketShowcase">
-                        <div class="basketShowcaseBox">
-                            <p class="basketShowcaseText"></p>
-                            <div class="basketShowcaseInfoBox">
-                                <div class="basketShowcaseStat">
-                                    <p class="statName">Height</p>
-                                    <p class="statValue"></p>
-                                </div>
-                                <div class="basketShowcaseStat">
-                                    <p class="statName">Weight</p>
-                                    <p class="statValue"></p>
-                                </div>
-                                <div class="basketShowcaseStat">
-                                    <p class="statName">Type</p>
-                                    <p class="statValue"></p>
-                                </div>
-                                <div class="basketShowcaseStat">
-                                    <p class="statName">Health Points</p>
-                                    <p class="statValue"></p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="dontshow" id="spineapple">
-                    <div class="showcaseBoxes">
-                        <img src="fruitBasketImg/spineappleRealistic.jpg" alt="A pineapple with very large and dangerous spines" class="basketShowcase">
-                        <div class="basketShowcaseBox">
-                            <p class="basketShowcaseText"></p>
-                            <div class="basketShowcaseInfoBox">
-                                <div class="basketShowcaseStat">
-                                    <p class="statName">Height</p>
-                                    <p class="statValue"></p>
-                                </div>
-                                <div class="basketShowcaseStat">
-                                    <p class="statName">Weight</p>
-                                    <p class="statValue"></p>
-                                </div>
-                                <div class="basketShowcaseStat">
-                                    <p class="statName">Type</p>
-                                    <p class="statValue"></p>
-                                </div>
-                                <div class="basketShowcaseStat">
-                                    <p class="statName">Health Points</p>
-                                    <p class="statValue"></p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="dontshow" id="falseStr">
-                    <div class="showcaseBoxes">
-                        <img src="fruitBasketImg/theBestFalseStrawberry.jfif" alt="A mock straberry wearing phony glasses and a mustache" class="basketShowcase">
-                        <div class="basketShowcaseBox">
-                            <p class="basketShowcaseText"></p>
-                            <div class="basketShowcaseInfoBox">
-                                <div class="basketShowcaseStat">
-                                    <p class="statName">Height</p>
-                                    <p class="statValue"></p>
-                                </div>
-                                <div class="basketShowcaseStat">
-                                    <p class="statName">Weight</p>
-                                    <p class="statValue"></p>
-                                </div>
-                                <div class="basketShowcaseStat">
-                                    <p class="statName">Type</p>
-                                    <p class="statValue"></p>
-                                </div>
-                                <div class="basketShowcaseStat">
-                                    <p class="statName">Health Points</p>
-                                    <p class="statValue"></p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="dontshow" id="bananarang">
-                    <div class="showcaseBoxes">
-                        <img src="fruitBasketImg/bananarang.png" alt="A banana wearing a bandana throwing a boomerang" class="basketShowcase">
-                        <div class="basketShowcaseBox">
-                            <p class="basketShowcaseText"></p>
-                            <div class="basketShowcaseInfoBox">
-                                <div class="basketShowcaseStat">
-                                    <p class="statName">Height</p>
-                                    <p class="statValue"></p>
-                                </div>
-                                <div class="basketShowcaseStat">
-                                    <p class="statName">Weight</p>
-                                    <p class="statValue"></p>
-                                </div>
-                                <div class="basketShowcaseStat">
-                                    <p class="statName">Type</p>
-                                    <p class="statValue"></p>
-                                </div>
-                                <div class="basketShowcaseStat">
-                                    <p class="statName">Health Points</p>
-                                    <p class="statValue"></p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="dontshow" id="figs">
-                    <div class="showcaseBoxes">
-                        <img src="fruitBasketImg/clusterBombFigs.png" alt="Flaming cluster bomb figs dropping from the sky" class="basketShowcase">
-                        <div class="basketShowcaseBox">
-                            <p class="basketShowcaseText"></p>
-                            <div class="basketShowcaseInfoBox">
-                                <div class="basketShowcaseStat">
-                                    <p class="statName">Height</p>
-                                    <p class="statValue"></p>
-                                </div>
-                                <div class="basketShowcaseStat">
-                                    <p class="statName">Weight</p>
-                                    <p class="statValue"></p>
-                                </div>
-                                <div class="basketShowcaseStat">
-                                    <p class="statName">Type</p>
-                                    <p class="statValue"></p>
-                                </div>
-                                <div class="basketShowcaseStat">
-                                    <p class="statName">Health Points</p>
-                                    <p class="statValue"></p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="dontshow" id="waterFelon">
-                    <div class="showcaseBoxes">
-                        <img src="fruitBasketImg/waterFelon.png" alt="One nasty-looking criminal watermelon" class="basketShowcase">
-                        <div class="basketShowcaseBox">
-                            <p class="basketShowcaseText"></p>
-                            <div class="basketShowcaseInfoBox">
-                                <div class="basketShowcaseStat">
-                                    <p class="statName">Height</p>
-                                    <p class="statValue"></p>
-                                </div>
-                                <div class="basketShowcaseStat">
-                                    <p class="statName">Weight</p>
-                                    <p class="statValue"></p>
-                                </div>
-                                <div class="basketShowcaseStat">
-                                    <p class="statName">Type</p>
-                                    <p class="statValue"></p>
-                                </div>
-                                <div class="basketShowcaseStat">
-                                    <p class="statName">Health Points</p>
-                                    <p class="statValue"></p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="dontshow" id="dragonFruit">
-                    <div class="showcaseBoxes">
-                        <img src="fruitBasketImg/dragonFruit.png" alt="An imposing orange dragon in a tropical orchard" class="basketShowcase">
-                        <div class="basketShowcaseBox">
-                            <p class="basketShowcaseText"></p>
-                            <div class="basketShowcaseInfoBox">
-                                <div class="basketShowcaseStat">
-                                    <p class="statName">Height</p>
-                                    <p class="statValue"></p>
-                                </div>
-                                <div class="basketShowcaseStat">
-                                    <p class="statName">Weight</p>
-                                    <p class="statValue"></p>
-                                </div>
-                                <div class="basketShowcaseStat">
-                                    <p class="statName">Type</p>
-                                    <p class="statValue"></p>
-                                </div>
-                                <div class="basketShowcaseStat">
-                                    <p class="statName">Health Points</p>
-                                    <p class="statValue"></p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="dontshow" id="ninjaKiwi">
-                    <div class="showcaseBoxes">
-                        <img src="indexImg/ninjaKiwiTwo.jpg" alt="The one, the only, Ninja Kiwi" class="basketShowcase">
-                        <div class="basketShowcaseBox">
-                            <p class="basketShowcaseText">Master of the martial arts, Ninja Kiwi perfectly balances cunning and speed in order to achieve swift, juicy victory.</p>
-                            <div class="basketShowcaseInfoBox">
-                                <div class="basketShowcaseStat">
-                                    <p class="statName">Height</p>
-                                    <p class="statValue"></p>
-                                </div>
-                                <div class="basketShowcaseStat">
-                                    <p class="statName">Weight</p>
-                                    <p class="statValue"></p>
-                                </div>
-                                <div class="basketShowcaseStat">
-                                    <p class="statName">Type</p>
-                                    <p class="statValue"></p>
-                                </div>
-                                <div class="basketShowcaseStat">
-                                    <p class="statName">Health Points</p>
-                                    <p class="statValue"></p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </section>
-            <hr>
-            <section class="fruitBasketAbout">
 
-            </section>
-        </main>
-        <footer>
-            <div class="line"></div>
-            <div class="flex">
-                <div>Created by Apex Incarna on August 27th, 2022</div>
-                <div><a href="imgCredit.html">Image Credit</a></div>
+<head>
+    <title>Fruitimon - The Fruit Basket</title>
+    <link rel="stylesheet" href="fruitiStyle.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="indexImg/fruitmonLogo.jpg">
+    <script src="fruitBasket.js" defer></script>
+</head>
+
+<body>
+    <section class="navBar">
+        <div class="navText"><a href="index.html">Home</a></div>
+        <div class="navText"><a href="play.html">Play</a></div>
+        <div class="navText currentPage"><a href="fruitBasket.html">Fruits</a></div>
+        <div class="navText"><a href="news.html">News</a></div>
+        <div class="navText"><a href="shop.html">Shop</a></div>
+    </section>
+    <div class="space"></div>
+    <main>
+        <section class="fruitBasket">
+            <h1>The Fruit Basket</h1>
+            <p>Select a Fruitimon to begin!</p>
+            <div class="boxes">
+                <div id="cAnetelopeImg" class="newsBox"><a href="fruitBasket.html#cAnetelope"><img
+                            src="fruitBasketImg/cAnetelope.jfif" alt="A cantaloupe with an antelope head"></a></div>
+                <div id="bikerGangImg" class="newsBox"><a href="fruitBasket.html#bikerGang"><img
+                            src="fruitBasketImg/raspberryBikerGang.jpg"
+                            alt="The entire raspberry biker gang piled onto one motorcycle"></a></div>
+                <div id="spineappleImg" class="newsBox"><a href="fruitBasket.html#spineapple"><img
+                            src="fruitBasketImg/spineappleRealistic.jpg"
+                            alt="A pineapple with very large and dangerous spines"></a></div>
+                <div id="falseStrImg" class="newsBox"><a href="fruitBasket.html#falseStr"><img
+                            src="fruitBasketImg/theBestFalseStrawberry.jfif"
+                            alt="A mock straberry wearing phony glasses and a mustache"></a></div>
+                <div id="bananarangImg" class="newsBox"><a href="fruitBasket.html#bananarang"><img
+                            src="fruitBasketImg/bananarang.png"
+                            alt="A banana wearing a bandana throwing a boomerang"></a></div>
+                <div id="figsImg" class="newsBox"><a href="fruitBasket.html#figs"><img
+                            src="fruitBasketImg/clusterBombFigs.png"
+                            alt="Flaming cluster bomb figs dropping from the sky"></a></div>
+                <div id="waterFelonImg" class="newsBox"><a href="fruitBasket.html#waterFelon"><img
+                            src="fruitBasketImg/waterFelon.png" alt="One nasty-looking criminal watermelon"></a></div>
+                <div id="dragonFruitImg" class="newsBox"><a href="fruitBasket.html#dragonFruit"><img
+                            src="fruitBasketImg/dragonFruit.png"
+                            alt="An imposing orange dragon in a tropical orchard"></a></div>
+                <div id="ninjaKiwiImg" class="newsBox"><a href="fruitBasket.html#ninjaKiwi"><img
+                            src="indexImg/ninjaKiwiTwo.jpg" alt="The one, the only, Ninja Kiwi"></a></div>
             </div>
-        </footer>
-    </body>
+            <section class="dontshow" id="cAnetelope">
+                <div class="showcaseBoxes">
+                    <img src="fruitBasketImg/cAnetelope.jfif" alt="A cantaloupe with an antelope head"
+                        class="basketShowcase">
+                    <div class="basketShowcaseBox">
+                        <p class="basketShowcaseText">The leaping C-Anetelope likes to graze in peaceful pastures, but
+                            when it's disturbed it will not hesitate to brandish its large horns.</p>
+                        <div class="basketShowcaseInfoBox">
+                            <div class="basketShowcaseStat">
+                                <p class="statName">Height</p>
+                                <p class="statValue">5' 07"</p>
+                            </div>
+                            <div class="basketShowcaseStat">
+                                <p class="statName">Weight</p>
+                                <p class="statValue">183 lbs</p>
+                            </div>
+                            <div class="basketShowcaseStat">
+                                <p class="statName">Type</p>
+                                <p class="statValue">Grass</p>
+                            </div>
+                            <div class="basketShowcaseStat">
+                                <p class="statName">Health Points</p>
+                                <p class="statValue">50</p>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <section class="dontshow" id="bikerGang">
+                <div class="showcaseBoxes">
+                    <img src="fruitBasketImg/raspberryBikerGang.jpg"
+                        alt="The entire raspberry biker gang piled onto one motorcycle" class="basketShowcase">
+                    <div class="basketShowcaseBox">
+                        <p class="basketShowcaseText">The notorious Raspberry Biker Gang known as the Flame Fruits
+                            patrols the streets on one tricked-out ride.</p>
+                        <div class="basketShowcaseInfoBox">
+                            <div class="basketShowcaseStat">
+                                <p class="statName">Height</p>
+                                <p class="statValue">6' 01"</p>
+                            </div>
+                            <div class="basketShowcaseStat">
+                                <p class="statName">Weight</p>
+                                <p class="statValue">433 lbs</p>
+                            </div>
+                            <div class="basketShowcaseStat">
+                                <p class="statName">Type</p>
+                                <p class="statValue">Bruiser</p>
+                            </div>
+                            <div class="basketShowcaseStat">
+                                <p class="statName">Health Points</p>
+                                <p class="statValue">60</p>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <section class="dontshow" id="spineapple">
+                <div class="showcaseBoxes">
+                    <img src="fruitBasketImg/spineappleRealistic.jpg"
+                        alt="A pineapple with very large and dangerous spines" class="basketShowcase">
+                    <div class="basketShowcaseBox">
+                        <p class="basketShowcaseText">The spineapple uses its unusually large and sharp spines both to
+                            ward off predators and to take down prey.</p>
+                        <div class="basketShowcaseInfoBox">
+                            <div class="basketShowcaseStat">
+                                <p class="statName">Height</p>
+                                <p class="statValue">1' 02"</p>
+                            </div>
+                            <div class="basketShowcaseStat">
+                                <p class="statName">Weight</p>
+                                <p class="statValue">40 lbs</p>
+                            </div>
+                            <div class="basketShowcaseStat">
+                                <p class="statName">Type</p>
+                                <p class="statValue">Sharp</p>
+                            </div>
+                            <div class="basketShowcaseStat">
+                                <p class="statName">Health Points</p>
+                                <p class="statValue">30</p>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <section class="dontshow" id="falseStr">
+                <div class="showcaseBoxes">
+                    <img src="fruitBasketImg/theBestFalseStrawberry.jfif"
+                        alt="A mock straberry wearing phony glasses and a mustache" class="basketShowcase">
+                    <div class="basketShowcaseBox">
+                        <p class="basketShowcaseText">The False Strawberry has perfected the art of impersonation and
+                            deception for use in landing backstabbing strikes on its foes.</p>
+                        <div class="basketShowcaseInfoBox">
+                            <div class="basketShowcaseStat">
+                                <p class="statName">Height</p>
+                                <p class="statValue">0' 04"</p>
+                            </div>
+                            <div class="basketShowcaseStat">
+                                <p class="statName">Weight</p>
+                                <p class="statValue">11 lbs</p>
+                            </div>
+                            <div class="basketShowcaseStat">
+                                <p class="statName">Type</p>
+                                <p class="statValue">Stealth</p>
+                            </div>
+                            <div class="basketShowcaseStat">
+                                <p class="statName">Health Points</p>
+                                <p class="statValue">40</p>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <section class="dontshow" id="bananarang">
+                <div class="showcaseBoxes">
+                    <img src="fruitBasketImg/bananarang.png" alt="A banana wearing a bandana throwing a boomerang"
+                        class="basketShowcase">
+                    <div class="basketShowcaseBox">
+                        <p class="basketShowcaseText">The bananarang battles with banana boomerangs. Try saying that
+                            five times fast.</p>
+                        <div class="basketShowcaseInfoBox">
+                            <div class="basketShowcaseStat">
+                                <p class="statName">Height</p>
+                                <p class="statValue">4' 11"</p>
+                            </div>
+                            <div class="basketShowcaseStat">
+                                <p class="statName">Weight</p>
+                                <p class="statValue">130 lbs</p>
+                            </div>
+                            <div class="basketShowcaseStat">
+                                <p class="statName">Type</p>
+                                <p class="statValue">Projectile</p>
+                            </div>
+                            <div class="basketShowcaseStat">
+                                <p class="statName">Health Points</p>
+                                <p class="statValue">50</p>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <section class="dontshow" id="figs">
+                <div class="showcaseBoxes">
+                    <img src="fruitBasketImg/clusterBombFigs.png" alt="Flaming cluster bomb figs dropping from the sky"
+                        class="basketShowcase">
+                    <div class="basketShowcaseBox">
+                        <p class="basketShowcaseText">The Cluster Bomb Fig triplets each have an explosive temper and a
+                            quick fuse.</p>
+                        <div class="basketShowcaseInfoBox">
+                            <div class="basketShowcaseStat">
+                                <p class="statName">Height</p>
+                                <p class="statValue">1' 00"</p>
+                            </div>
+                            <div class="basketShowcaseStat">
+                                <p class="statName">Weight</p>
+                                <p class="statValue">324 lbs</p>
+                            </div>
+                            <div class="basketShowcaseStat">
+                                <p class="statName">Type</p>
+                                <p class="statValue">Fire</p>
+                            </div>
+                            <div class="basketShowcaseStat">
+                                <p class="statName">Health Points</p>
+                                <p class="statValue">60</p>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <section class="dontshow" id="waterFelon">
+                <div class="showcaseBoxes">
+                    <img src="fruitBasketImg/waterFelon.png" alt="One nasty-looking criminal watermelon"
+                        class="basketShowcase">
+                    <div class="basketShowcaseBox">
+                        <p class="basketShowcaseText">Despicable and rotten, the FDA has been trying to crack down on
+                            the WaterFelon for years.</p>
+                        <div class="basketShowcaseInfoBox">
+                            <div class="basketShowcaseStat">
+                                <p class="statName">Height</p>
+                                <p class="statValue">3' 09"</p>
+                            </div>
+                            <div class="basketShowcaseStat">
+                                <p class="statName">Weight</p>
+                                <p class="statValue">222 lbs</p>
+                            </div>
+                            <div class="basketShowcaseStat">
+                                <p class="statName">Type</p>
+                                <p class="statValue">Stealth</p>
+                            </div>
+                            <div class="basketShowcaseStat">
+                                <p class="statName">Health Points</p>
+                                <p class="statValue">70</p>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <section class="dontshow" id="dragonFruit">
+                <div class="showcaseBoxes">
+                    <img src="fruitBasketImg/dragonFruit.png" alt="An imposing orange dragon in a tropical orchard"
+                        class="basketShowcase">
+                    <div class="basketShowcaseBox">
+                        <p class="basketShowcaseText">The Dragon Fruit is the undisputed King of Fruits. It will stop at
+                            nothing to incinerate intruders into its orchard lair.</p>
+                        <div class="basketShowcaseInfoBox">
+                            <div class="basketShowcaseStat">
+                                <p class="statName">Height</p>
+                                <p class="statValue">8' 11"</p>
+                            </div>
+                            <div class="basketShowcaseStat">
+                                <p class="statName">Weight</p>
+                                <p class="statValue">592 lbs</p>
+                            </div>
+                            <div class="basketShowcaseStat">
+                                <p class="statName">Type</p>
+                                <p class="statValue">Fire</p>
+                            </div>
+                            <div class="basketShowcaseStat">
+                                <p class="statName">Health Points</p>
+                                <p class="statValue">100</p>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <section class="dontshow" id="ninjaKiwi">
+                <div class="showcaseBoxes">
+                    <img src="indexImg/ninjaKiwiTwo.jpg" alt="The one, the only, Ninja Kiwi" class="basketShowcase">
+                    <div class="basketShowcaseBox">
+                        <p class="basketShowcaseText">Master of the martial arts, Ninja Kiwi perfectly balances cunning
+                            and speed in order to achieve swift, juicy victory.</p>
+                        <div class="basketShowcaseInfoBox">
+                            <div class="basketShowcaseStat">
+                                <p class="statName">Height</p>
+                                <p class="statValue">3' 04"</p>
+                            </div>
+                            <div class="basketShowcaseStat">
+                                <p class="statName">Weight</p>
+                                <p class="statValue">101 lbs</p>
+                            </div>
+                            <div class="basketShowcaseStat">
+                                <p class="statName">Type</p>
+                                <p class="statValue">Stealth</p>
+                            </div>
+                            <div class="basketShowcaseStat">
+                                <p class="statName">Health Points</p>
+                                <p class="statValue">20</p>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </section>
+        <section id="fruitBasketAbout">
+            <div class="fBAboutBoxes">
+                <div class="fBAboutText">
+                    <h2>What is the Fruit Basket?</h2>
+                    <p>The Fruit Basket is where all Fruits come to rest and relax after a long day of Fruitimon fun. Here
+                    you can find the stats of all of the Fruits currently checked into the hotel using the interactive
+                    menu above. Don't see your favorite fruit? Come back some other time to see if any new Fruits have
+                    checked in!</p>
+                </div>
+                <div>
+                    <img src="fruitBasketImg/fruitHotelTwo.png" alt="A hotel for Fruits">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="line"></div>
+        <div class="flex">
+            <div>Created by Apex Incarna on August 27th, 2022</div>
+            <div><a href="imgCredit.html">Image Credit</a></div>
+        </div>
+    </footer>
+</body>
+
 </html>
