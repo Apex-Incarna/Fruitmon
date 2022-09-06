@@ -124,6 +124,23 @@ footer {
     display: none;
 }
 
+.imageCredit {
+    display: block;
+    margin: auto;
+}
+
+.flex div {
+    max-width: 50%;
+}
+
+.allOut img {
+    width: 100%;
+}
+
+.allOutText {
+    text-align: center;
+}
+
 
 
 
@@ -244,6 +261,7 @@ section.fruitBasket section{
     text-align: left;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-around;
     font-size: 1.3em;
 }
@@ -258,6 +276,7 @@ section.fruitBasket section{
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 3%;
+    width: 100%;
 }
 
 .statName {
@@ -341,54 +360,102 @@ section.fruitBasket section{
 }
 
 
+
+
+
+
+
+
+/* Shop Page */
+.shopImg {
+    width: 100%;
+}
+
+.shopIntro .boxes a {
+    display: block;
+    width: 30%;
+    margin: 5%;
+    transition: transform .5s;
+}
+
+.shopIntro .boxes a:hover {
+    transform: scale(1.05);
+}
+
+
+
+
 /* Media queries for responsive web design */
 /* These ask the browser to identify the properties of the media that the content is being 
 displayed on and change the CSS rules accordingly */
 
 /* As long as the width of the viewport is less than 750px, implement the rules inside the media query */
 @media screen and (max-width: 750px) {
-    header {
-        height: 40vh;
-    }
-
-    .intro {
-        height: 30vh;
-    }
-
-    .introImg {
-        margin: auto 0 auto 3%;
-        height: 20vw;
-    }
-
-    #video {
-        margin: auto 0 auto 6%;
-    }
-
-    .introText {
-        font-size: 1em;
-        width: 45%;
-        margin: auto auto auto 1%;
-    }
-
     main {
         margin: 0 5%;
     }
 
-    h2 {
+    /* * {
+        font-size: .8rem;
+    } */
+
+    .boxes {
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .boxes div, .boxes a {
+        width: 100%;
+        margin-left: -10px;
+        padding: 0;
+    }
+
+    .fBAboutBoxes {
+        flex-direction: column;
+    }
+
+    .newsText h3, .newsText h4, .newsText p{
+        margin-left: 7%;
+    }
+
+    .newsBox img {
+        width: 100%;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .shopIntro .boxes a {
+        width: 100%;
+        margin: 0;
+    }
+
+    .shopBox {
+        margin-left: 0 !important;
+    }
+
+    #fruitBasketAbout {
+        padding-bottom: 1%;
+    }
+
+    .showcaseBoxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .showcaseBoxes img {
+        width: 75%;
+        height: 75%;
+        border-radius: 30px;
+    }
+
+    .basketShowcaseInfoBox {
+        width: 80%;
+    }
+
+    .basketShowcaseStat {
         font-size: 1.5em;
     }
-
-    footer {
-        font-size: .5em;
-    }
 }
-
-/* As long as the width of the viewport is greater than 1200px, implement the rules inside the media query */
-@media (min-width: 1200px) {
-    body {
-        font-size: 1rem;
-    }
-}
-
-/* As long as the screen is in portrait mode, implement the rules inside the media query */
-@media screen and (orientation: portrait) {}
