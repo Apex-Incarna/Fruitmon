@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Seymour+One&family=Shadows+Into+Light&display=swap');
 
+/* All of the website-wide css goes here */
 * {
     font-size: 1rem;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+html {
+    scroll-behavior: smooth
 }
 
 body {
@@ -9,43 +16,6 @@ body {
     padding: 0;
     background-image: url(indexImg/fruitIconCollageGrey.jpg);
     background-repeat: round;
-}
-
-header {
-    /* padding-left: 20%;
-    padding-right: 20%; */
-    height: 100vh;
-    font-family: 'Seymour One', sans-serif;
-    color: chartreuse;
-    background-image: url(indexImg/backgroundFruits.jpg);
-    background-size: cover;
-}
-
-.intro {
-    display: flex;
-    align-items: flex-start;
-    width: 100%;
-    margin: auto;
-    height: 90vh;
-}
-
-.introImg {
-    margin: auto 0 auto 22%
-}
-
-.introImg img {
-    width: 20vw;
-}
-
-.introImg iframe {
-    width: 56vw;
-    height: 31.5vw;
-}
-
-.introText {
-    font-size: 2vw;
-    margin: auto auto auto 1%;
-    width: 40%;
 }
 
 .space {
@@ -65,7 +35,7 @@ header {
     background-color: lightblue;
     opacity: .9;
     font-size: 1em;
-    font-family: cursive;
+    font-family: "permanent marker", serif;
 }
 
 .navBarSpace {
@@ -77,117 +47,41 @@ a {
     color: inherit;
 }
 
-.navbar a:hover {
+p a {
+    text-decoration: underline;
+    color: black;
+}
+
+.navText a:hover, footer a:hover, p a:hover{
     opacity: .5;
 }
 
 .currentPage {
-    /* background-color: grey;
-    min-width: fit-content;
-    width: 15%; */
     padding-top: 2%;
     padding-bottom: 1%;
     margin-top: -1%;
-    font-weight: 700;
+    color: whitesmoke;
 }
 
 main {
-    height: 300vh;
+    min-height: 100vh;
     margin: 0 10%;
     background-color: white;
     padding: 1%;
 }
 
-table td {
-    border: #FFEB3B solid;
+h1 {
+    font-family: 'Seymour One', sans-serif;
+    font-size: 2em;
 }
 
-.boxes {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+h3 {
+    font-family: "permanent marker", serif;
 }
 
-.topBoxes,
-.bottomBoxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.bigBox {
-    height: 40vw;
-    width: 40vw;
-}
-
-.smallBox {
-    width: 20vw;
-    height: 20vw;
-    padding: 2%;
-}
-
-.bigBox,
-.smallBox {
-    position: relative;
-}
-
-.boxText {
-    background-color: #FFEB3B;
-    position: absolute;
-    bottom: 10%;
-    width: 100%;
-    padding: 1%;
-    margin: -1%;
-    text-align: center;
-    border: #FFEB3B solid;
-}
-
-#box1,
-#box2,
-#box3,
-#box4,
-#box5,
-#box6 {
-    background-size: cover;
-    background-clip: content-box;
-    transition: all 0.5s;
-    width: 20vw;
-    height: 20vw;
-}
-
-#box1:hover,
-#box2:hover,
-#box3:hover,
-#box4:hover,
-#box5:hover,
-#box6:hover {
-    padding: 1%;
-    margin: -1%;
-}
-
-#box1 {
-    background-image: url(indexImg/colorfulOrchard.jfif);
-}
-
-#box2 {
-    background-image: url(indexImg/oilMountainOrchardTwo.jfif);
-}
-
-#box3 {
-    background-image: url(indexImg/ninjaKiwiTwo.jpg);
-}
-
-#box4 {
-    background-image: url(fruitBasketImg/raspberryBikerGang.jpg);
-}
-
-#box5 {
-    background-image: url(fruitBasketImg/fruitBasket.jpg);
-}
-
-#box6 {
-    background-image: url(indexImg/fruitConstruction.jpg);
+h4 {
+    color: coral;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 h2 {
@@ -207,6 +101,10 @@ p {
     margin: auto 5%;
 }
 
+hr {
+    margin: 5% 0;
+}
+
 .line {
     width: 80%;
     background-color: black;
@@ -222,54 +120,342 @@ footer {
     font-size: .75em;
 }
 
+.dontshow {
+    display: none;
+}
+
+.imageCredit {
+    display: block;
+    margin: auto;
+}
+
+.flex div {
+    max-width: 50%;
+}
+
+.allOut img {
+    width: 100%;
+}
+
+.allOutText {
+    text-align: center;
+}
+
+
+
+
+
+
+
+/* Main Page */
+section.intro {
+    margin: 0 10%;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.smallBox {
+    display: block;
+    width: 30%;
+    margin: 1%;
+    transition: background-color .1s;
+    transition: transform .5s;
+    position: relative;
+}
+
+.smallBox img {
+    width: 100%;
+    border: 5px solid lightblue;
+    border-radius: 5%;
+}
+
+.smallBox:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.boxText {
+    background-color: coral;
+    position: absolute;
+    bottom: 10%;
+    width: 95%;
+    text-align: center;
+    /* border-style: outset; */
+    border-radius: 0 20px 20px 0;
+    font-weight: 700;
+}
+
+
+
+
+
+
+/* Play Page */
+.playIntro {
+    background-color: lightskyblue;
+    padding: 10vh 2%;
+    border-radius: 10px;
+}
+
+.playIntroText {
+    width: 90%;
+    padding-right: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.playIntroText p {
+    font-size: 1.8em;
+}
+
+iframe {
+    min-width: 56vw;
+    min-height: 31.5vw;
+}
+
+
+
+
+
+
+
+
+
+
+/* Fruits Page */
+section.fruitBasket {
+    text-align: center;
+}
+
+section.fruitBasket section{
+    border: 5px solid lightblue;
+    border-radius: 10px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.basketShowcase {
+    width: 30vw;
+    height: 30vw;
+    border: 3px solid coral;
+    border-radius: 100px;
+    margin-right: 3%;
+}
+
+.showcaseBoxes {
+    display: flex;
+    justify-content: space-around;
+}
+
+.basketShowcaseBox {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.3em;
+}
+
+.basketShowcaseStat {
+    text-align: center;
+}
+
+.basketShowcaseInfoBox {
+    background-color: lightskyblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 3%;
+    width: 100%;
+}
+
+.statName {
+    color: white;
+}
+
+.statValue {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#fruitBasketAbout {
+    background-color: lightskyblue;
+    padding: 10vh 2%;
+    border-radius: 10px;
+    margin-top: 5%;
+}
+
+#fruitBasketAbout img {
+    width: 100%;
+}
+
+.fBAboutText {
+    width: 90%;
+    padding-right: 1%;
+}
+
+.fBAboutText p {
+    font-size: 1.8em;
+}
+
+.fBAboutBoxes {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+
+
+
+
+
+
+/* News Page */
+.newsBox {
+    width: 20%;
+    margin: 5%;
+    transition: background-color .1s;
+    transition: transform .5s;
+}
+
+.newsBox:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.newsBox img {
+    border: 10px solid lightblue;
+    border-radius: 10%;
+    margin: 1% auto 0 auto;
+    width: 97%;
+    padding: 0%;
+    display: block;
+}
+
+.newsText {
+    padding: .5%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* white-space: nowrap; */
+}
+
+#topNewsBoxes {
+    flex-wrap: nowrap;
+}
+
+#topNewsBox {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+/* Shop Page */
+.shopImg {
+    width: 100%;
+}
+
+.shopIntro .boxes a {
+    display: block;
+    width: 30%;
+    margin: 5%;
+    transition: transform .5s;
+}
+
+.shopIntro .boxes a:hover {
+    transform: scale(1.05);
+}
+
+
+
+
 /* Media queries for responsive web design */
 /* These ask the browser to identify the properties of the media that the content is being 
 displayed on and change the CSS rules accordingly */
 
 /* As long as the width of the viewport is less than 750px, implement the rules inside the media query */
 @media screen and (max-width: 750px) {
-    header {
-        height: 40vh;
-    }
-
-    .intro {
-        height: 30vh;
-    }
-
-    .introImg {
-        margin: auto 0 auto 3%;
-        height: 20vw;
-    }
-
-    #video {
-        margin: auto 0 auto 6%;
-    }
-
-    .introText {
-        font-size: 1em;
-        width: 45%;
-        margin: auto auto auto 1%;
-    }
-
     main {
         margin: 0 5%;
     }
 
-    h2 {
+    /* * {
+        font-size: .8rem;
+    } */
+
+    .boxes {
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .boxes div, .boxes a {
+        width: 100%;
+        margin-left: -10px;
+        padding: 0;
+    }
+
+    .fBAboutBoxes {
+        flex-direction: column;
+    }
+
+    .newsText h3, .newsText h4, .newsText p{
+        margin-left: 7%;
+    }
+
+    .newsBox img {
+        width: 100%;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .shopIntro .boxes a {
+        width: 100%;
+        margin: 0;
+    }
+
+    .shopBox {
+        margin-left: 0 !important;
+    }
+
+    #fruitBasketAbout {
+        padding-bottom: 1%;
+    }
+
+    .showcaseBoxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .showcaseBoxes img {
+        width: 75%;
+        height: 75%;
+        border-radius: 30px;
+    }
+
+    .basketShowcaseInfoBox {
+        width: 80%;
+    }
+
+    .basketShowcaseStat {
         font-size: 1.5em;
     }
-
-    footer {
-        font-size: .5em;
-    }
 }
-
-/* As long as the width of the viewport is greater than 1200px, implement the rules inside the media query */
-@media (min-width: 1200px) {
-    body {
-        font-size: 1rem;
-    }
-}
-
-/* As long as the screen is in portrait mode, implement the rules inside the media query */
-@media screen and (orientation: portrait) {}
