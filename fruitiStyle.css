@@ -2,7 +2,7 @@
 
 /* All of the website-wide css goes here */
 * {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-block-start: 0;
     margin-block-end: 0;
 }
@@ -34,7 +34,7 @@ body {
     z-index: 1;
     background-color: lightblue;
     opacity: .9;
-    font-size: 1em;
+    font-size: 2em;
     font-family: "permanent marker", serif;
 }
 
@@ -45,6 +45,11 @@ body {
 a {
     text-decoration: none;
     color: inherit;
+    font-size: inherit;
+}
+
+.navText a {
+    font-size: 1.75em;
 }
 
 p a {
@@ -117,7 +122,11 @@ footer {
     background-color: black;
     color: white;
     padding: 1% 0;
-    font-size: .75em;
+    font-family: "seymour one", serif;
+}
+
+footer div div {
+    font-size: .5em;
 }
 
 .dontshow {
@@ -149,7 +158,7 @@ footer {
 
 /* Main Page */
 section.intro {
-    margin: 0 10%;
+    margin: 0 5%;
 }
 
 .boxes {
@@ -185,11 +194,14 @@ section.intro {
     background-color: coral;
     position: absolute;
     bottom: 10%;
-    width: 95%;
-    text-align: center;
+    width: max-content;
+    max-width: 95%;
+    padding: 1% 5%;
+    text-align: left;
     /* border-style: outset; */
     border-radius: 0 20px 20px 0;
     font-weight: 700;
+    font-size: 1.75vw;
 }
 
 
@@ -366,6 +378,29 @@ section.fruitBasket section{
 
 
 
+
+/* News Articles */
+.articleTop {
+    background-color: lightskyblue;
+    padding: 2%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.articleImg img {
+    width: min-content;
+}
+
+.articleText {
+    /* width: 30%; */
+    padding-left: 5%;
+}
+
+
+
+
 /* Shop Page */
 .shopImg {
     width: 100%;
@@ -390,7 +425,7 @@ section.fruitBasket section{
 displayed on and change the CSS rules accordingly */
 
 /* As long as the width of the viewport is less than 750px, implement the rules inside the media query */
-@media screen and (max-width: 750px) {
+@media (orientation: portrait) {
     main {
         margin: 0 5%;
     }
@@ -457,5 +492,18 @@ displayed on and change the CSS rules accordingly */
 
     .basketShowcaseStat {
         font-size: 1.5em;
+    }
+
+    .navText a {
+        font-size: .95em;
+    }
+
+    .boxText {
+        font-size: 5vw;
+    }
+
+    .articleTop {
+        flex-direction: column;
+        text-align: center;
     }
 }
