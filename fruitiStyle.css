@@ -52,7 +52,7 @@ a {
     font-size: 1.75em;
 }
 
-p a {
+p a, li a {
     text-decoration: underline;
     color: black;
 }
@@ -94,7 +94,7 @@ h2 {
     font-size: 2em;
 }
 
-p {
+p, li {
     font-family: 'Shadows Into Light', cursive;
     font-size: 1em;
 }
@@ -217,7 +217,7 @@ section.intro {
 }
 
 .playIntroText {
-    width: 90%;
+    width: 100%;
     padding-right: 1%;
     display: flex;
     flex-direction: column;
@@ -229,10 +229,14 @@ section.intro {
 }
 
 iframe {
-    min-width: 56vw;
-    min-height: 31.5vw;
+    min-width: 50.909vw;
+    min-height: 28.636vw;
 }
 
+.playBox {
+    display: flex;
+    justify-content: space-between;
+}
 
 
 
@@ -306,12 +310,14 @@ section.fruitBasket section{
     margin-top: 5%;
 }
 
-#fruitBasketAbout img {
-    width: 100%;
+.fBAboutImg {
+    width: 50%;
+    float: right;
+    padding-left: 4%;
 }
 
 .fBAboutText {
-    width: 90%;
+    width: 100%;
     padding-right: 1%;
 }
 
@@ -319,11 +325,6 @@ section.fruitBasket section{
     font-size: 1.8em;
 }
 
-.fBAboutBoxes {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
 
 
 
@@ -390,13 +391,23 @@ section.fruitBasket section{
 }
 
 .articleImg img {
-    width: min-content;
+    width: 30vw;
 }
 
 .articleText {
-    /* width: 30%; */
     padding-left: 5%;
 }
+
+b {
+    display: inline-block;
+    text-indent: 20px;
+}
+
+
+
+
+
+
 
 
 
@@ -446,7 +457,15 @@ displayed on and change the CSS rules accordingly */
         padding: 0;
     }
 
-    .fBAboutBoxes {
+    .fBAboutImg {
+        float: none;
+        display: block;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .fBAboutText {
+        display: flex;
         flex-direction: column;
     }
 
@@ -469,10 +488,6 @@ displayed on and change the CSS rules accordingly */
 
     .shopBox {
         margin-left: 0 !important;
-    }
-
-    #fruitBasketAbout {
-        padding-bottom: 1%;
     }
 
     .showcaseBoxes {
@@ -506,4 +521,16 @@ displayed on and change the CSS rules accordingly */
         flex-direction: column;
         text-align: center;
     }
+
+    .articleText {
+        padding-left: 0%;
+    }
+
+    .playBox {
+        flex-direction: column;
+    }
+
+    .playIntroText {
+        text-align: center;
+    } 
 }
